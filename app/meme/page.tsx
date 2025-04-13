@@ -8,10 +8,11 @@ import { useQuery } from "@tanstack/react-query";
 import Image from "next/image";
 import Link from "next/link";
 import Loading from "../(layout)/loading";
+import { getAllMeme } from "../services/meme-service";
 export default function Blog() {
     const { data, isLoading } = useQuery({
-        queryKey: ["blogs"],
-        queryFn: getAllBlogs
+        queryKey: ["memes"],
+        queryFn: getAllMeme
     })
     if (isLoading) {
         return (
@@ -56,7 +57,7 @@ export default function Blog() {
 
                                     <Link
 
-                                        href={`/blog/${generateSlug(item.title, item._id)}`} className="text-blue-500 hover:underline">
+                                        href={`/meme/${generateSlug(item.title, item._id)}`} className="text-blue-500 hover:underline">
                                         Read more
                                     </Link>
                                 </div>

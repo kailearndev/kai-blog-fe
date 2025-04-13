@@ -33,13 +33,14 @@ export default function RootLayout({
       <body
         className={`${inter.className}`}
       >
-
-
-        <Header />
-        
-        <TantackProvider>
-          {children}
-        </TantackProvider>
+        <div className="flex h-svh ">
+          <Header />
+          <div className="flex-1 overflow-x-auto ">
+            <TantackProvider>
+              {children}
+            </TantackProvider>
+          </div>
+        </div>
 
       </body>
     </html>

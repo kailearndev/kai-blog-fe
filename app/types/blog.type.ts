@@ -6,6 +6,7 @@ export interface Blog {
     creator: string
     source: string
     image?: Image
+    comments: Comment[]
 }
 
 export interface Image {
@@ -15,4 +16,15 @@ export interface Image {
     url: string
     asset_folder: string
     display_name: string
+}
+
+
+export interface Comment {
+    _id: string;
+    name: string;
+    blogId: string;
+    content: string;
+    parentComment?: Comment;
+    created_at: string
+    updated_at: string
 }

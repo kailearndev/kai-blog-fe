@@ -19,11 +19,9 @@ export default function Blog() {
         )
     }
     return (
-        <div className="container mx-auto px-4 flex flex-col gap-5">
-            <div className="text-2xl font-bold mt-20 md:mt-28">
+        <div className="container mx-auto px-4 flex flex-col gap-5 py-10">
 
-            </div>
-            <div className=" grid grid-cols-1 md:grid-cols-2 gap-4 ">
+            <div className=" grid grid-cols-1 md:grid-cols-2 gap-4  ">
                 {
                     data?.data?.map((item) => (
                         <div
@@ -50,11 +48,11 @@ export default function Blog() {
                                 </div>
                             </div>
 
-                            <div className="flex justify-between items-center" >
+                            <div className="flex justify-between items-center gap-3" >
 
                                 <div className="flex flex-col flex-1" >
                                     <h2 className="text-xl font-semibold">{item.title}</h2>
-                                    <p className="text-gray-600">{item.summary}</p>
+                                    <p className="text-gray-600 line-clamp-2">{item.summary}</p>
 
                                     <Link
 

@@ -4,7 +4,7 @@ import Loading from "@/app/(layout)/loading";
 import { getBlogDetail } from "@/app/services/blog-service";
 import { Badge } from "@/components/ui/badge";
 import { useQuery } from "@tanstack/react-query";
-import { CornerDownRight, Reply } from "lucide-react";
+import { CornerDownRight } from "lucide-react";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import ReactMarkdown from "react-markdown";

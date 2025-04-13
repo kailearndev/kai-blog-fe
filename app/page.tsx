@@ -14,7 +14,7 @@ export default function Home() {
     >
 
       <div className="flex flex-col items-center gap-5 text-white ">
-        <h1 className="text-4xl md:text-6xl font-bold text-center">Hello, I'm Kai</h1>
+        <h1 className="text-4xl md:text-6xl font-bold text-center">{`Hello I'm Kai`}</h1>
         <h2 className="text-lg md:text-xl font-bold text-center">A software engineer</h2>
         <h2 className="text-lg md:text-xl font-bold text-center">Frontend developer</h2>
         <Link href={'/blog'}>

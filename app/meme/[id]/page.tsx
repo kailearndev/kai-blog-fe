@@ -1,7 +1,6 @@
 "use client";
 
 import Loading from "@/app/(layout)/loading";
-import { getBlogDetail } from "@/app/services/blog-service";
 import { getMemeDetail } from "@/app/services/meme-service";
 import { useQuery } from "@tanstack/react-query";
 import Image from "next/image";

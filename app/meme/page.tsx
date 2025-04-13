@@ -1,6 +1,5 @@
 
 "use client"
-import { getAllBlogs } from "@/app/services/blog-service";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { generateSlug } from "@/lib/generate-slug";

@@ -1,4 +1,4 @@
-import { icons, Menu, RocketIcon } from "lucide-react";
+import { Menu } from "lucide-react";
 import Link from "next/link";
 
 export default function Header() {
@@ -12,7 +12,7 @@ export default function Header() {
         {
             id: 91924,
             title: "Meme",
-            link: "/meme",
+            link: '/meme',
             icons: "🐞"
         },
         {
@@ -36,9 +36,11 @@ export default function Header() {
                     <span className="animate-pulse translate-y-1" >🚀</span>
                 </Link>
 
-                <span className="text-xs rotate-5 duration-150 ease-in">Hello, I'm Kai, <p className="text-md font-bold text-amber-100">
-                    FE developer.
-                </p>
+                <span className="text-xs rotate-5 duration-150 ease-in">
+                    {`Hello I'm Kai`}
+                    <p className="text-md font-bold text-amber-100">
+                        FE developer.
+                    </p>
                 </span>
 
                 <div className="border border-dashed" />
